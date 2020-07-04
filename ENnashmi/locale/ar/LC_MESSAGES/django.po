@@ -1,0 +1,268 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-15 14:04+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: .\ENnashmi\templates\ENnashmi\About.html:11
+msgid "ABOUT US"
+msgstr "عن الشركة"
+
+#: .\ENnashmi\templates\ENnashmi\About.html:20
+msgid "Nashmi Delivery"
+msgstr "نشمي للتوصيل"
+
+#: .\ENnashmi\templates\ENnashmi\About.html:20
+msgid ""
+"simply as electronic delivery which provides the best services to the "
+"customers who sign up for Nashmi Delivery.<br>Nashmi Delivery can be "
+"subdivided into various parts such as food delivery, grocery delivery, and "
+"much more."
+msgstr ""
+"خدمه  الطلب الالكتروني وتوفير افضل الغدات للزبائن عن طريق موقع نشمي . تشمل "
+"خدمة التوصيل عدة اجزاء كتوصيل الطعام وتوصيل بقالة وغيرها"
+
+#: .\ENnashmi\templates\ENnashmi\About.html:31
+msgid "LETTER FROM OUR"
+msgstr "رسالة من "
+
+#: .\ENnashmi\templates\ENnashmi\About.html:31
+msgid "CEO"
+msgstr "مدير التنفيذي"
+
+#: .\ENnashmi\templates\ENnashmi\About.html:33
+msgid "Read CEO letter"
+msgstr "اقرا رسالة مدير التنفيذي"
+
+#: .\ENnashmi\templates\ENnashmi\About.html:49
+msgid "Our Mission"
+msgstr "اهدافنا"
+
+#: .\ENnashmi\templates\ENnashmi\About.html:50
+msgid ""
+"To provide the highest quality of services for both delivery and "
+"transportation with the best innovative technical aspects, technology and "
+"well-trained resources."
+msgstr ""
+"لتوفير أعلى جودة من الخدمات لكل من التوصيل والنقل مع أفضل الجوانب التقنية "
+"المبتكرة والتكنولوجيا والموارد المدربة جيدًا"
+
+#: .\ENnashmi\templates\ENnashmi\About.html:59
+msgid "Our Vision"
+msgstr "رؤيتنا"
+
+#: .\ENnashmi\templates\ENnashmi\About.html:60
+msgid ""
+"To be the preferred supplier for safe, innovative, available, fast delivery "
+"and transportation services, for everyone and everywhere around the "
+"Jordanian kingdom."
+msgstr ""
+"أن نكون المورد المفضل لخدمات التوصيل والنقل الآمنة والمبتكرة والمتاحة "
+"والسريعة للجميع وفي جميع أنحاء المملكة الأردنية"
+
+#: .\ENnashmi\templates\ENnashmi\About.html:72
+msgid "COMMPANY INFO"
+msgstr "معلومات عن الشركة"
+
+#: .\ENnashmi\templates\ENnashmi\About.html:77
+msgid "Who's our drivers?"
+msgstr "من هم سائقينا"
+
+#: .\ENnashmi\templates\ENnashmi\About.html:78
+msgid ""
+"We're building a culture within ALNASHMI that emphasizes doing the right "
+"thing, period, for shoppers, drivers, and employees. Find out more about the "
+"team that's leading the way."
+msgstr ""
+"نحن نبني ثقافة داخل شركة النشمي تؤكد على فعل الشيء الصحيح والفترة للمتسوقين "
+"والسائقين والموظفين. اكتشف المزيد عن الفريق الذي يقود الطريق"
+
+#: .\ENnashmi\templates\ENnashmi\About.html:86
+msgid "Who's our partners?"
+msgstr "من هم شركائنا"
+
+#: .\ENnashmi\templates\ENnashmi\About.html:87
+msgid ""
+" We're building a culture within ALNASHMI that emphasizes doing the right "
+"thing, period, for shoppers, drivers, and employees. Find out more about the "
+"team that's leading the way."
+msgstr ""
+"نحن نبني ثقافة داخل شركة النشمي تؤكد على فعل الشيء الصحيح والفترة للمتسوقين "
+"والسائقين والموظفين. اكتشف المزيد عن الفريق الذي يقود الطريق"
+
+#: .\ENnashmi\templates\ENnashmi\Help.html:13
+msgid "QUESTIONS? WE'RE"
+msgstr "أسئلة؟ نحن"
+
+#: .\ENnashmi\templates\ENnashmi\Help.html:13
+msgid " HERE TO HELP"
+msgstr "هنا للمساعدة"
+
+#: .\ENnashmi\templates\ENnashmi\Help.html:23
+msgid "How to download al nashmi asfar app?"
+msgstr "كيفية تحميل تطبيق النشمي اصفر؟"
+
+#: .\ENnashmi\templates\ENnashmi\Help.html:27
+msgid "Tap the App Store or the Google Play Store."
+msgstr "قم بزيارة متجر ابل او متجر جوجل"
+
+#: .\ENnashmi\templates\ENnashmi\Help.html:28
+#: .\ENnashmi\templates\ENnashmi\Help.html:46
+#: .\ENnashmi\templates\ENnashmi\Help.html:66
+#: .\ENnashmi\templates\ENnashmi\Help.html:85
+#: .\ENnashmi\templates\ENnashmi\Help.html:104
+#: .\ENnashmi\templates\ENnashmi\Help.html:126
+#: .\ENnashmi\templates\ENnashmi\Help.html:145
+#: .\ENnashmi\templates\ENnashmi\Help.html:164
+msgid ""
+"Tap the magnifying glass icon and type \"Al Nashmi Asfar\" into the search "
+"field."
+msgstr "اضغط على أيقونة العدسة المكبرة واكتب النشمي اصفر في البحث"
+
+#: .\ENnashmi\templates\ENnashmi\Help.html:29
+#: .\ENnashmi\templates\ENnashmi\Help.html:47
+#: .\ENnashmi\templates\ENnashmi\Help.html:67
+#: .\ENnashmi\templates\ENnashmi\Help.html:86
+#: .\ENnashmi\templates\ENnashmi\Help.html:105
+#: .\ENnashmi\templates\ENnashmi\Help.html:127
+#: .\ENnashmi\templates\ENnashmi\Help.html:146
+#: .\ENnashmi\templates\ENnashmi\Help.html:165
+msgid ""
+"Seclect Alnashmi Asfar from the search results and tap Get on iPhones or "
+"install on Andriod devices."
+msgstr ""
+"حدد النشمي اصفر من نتائج البحث واضغط على نوع المشغل الخاص بجهازك (أندرويد أو "
+"أيفون)"
+
+#: .\ENnashmi\templates\ENnashmi\Help.html:33
+msgid "Top questions and answers"
+msgstr "أهم الأسئلة والأجوبة"
+
+#: .\ENnashmi\templates\ENnashmi\Help.html:39
+#: .\ENnashmi\templates\ENnashmi\Help.html:59
+#: .\ENnashmi\templates\ENnashmi\Help.html:78
+#: .\ENnashmi\templates\ENnashmi\Help.html:97
+#: .\ENnashmi\templates\ENnashmi\Help.html:119
+#: .\ENnashmi\templates\ENnashmi\Help.html:138
+#: .\ENnashmi\templates\ENnashmi\Help.html:157
+msgid "How do i get started?"
+msgstr "كيف أبدأ؟"
+
+#: .\ENnashmi\templates\ENnashmi\Help.html:45
+#: .\ENnashmi\templates\ENnashmi\Help.html:65
+#: .\ENnashmi\templates\ENnashmi\Help.html:84
+#: .\ENnashmi\templates\ENnashmi\Help.html:103
+#: .\ENnashmi\templates\ENnashmi\Help.html:125
+#: .\ENnashmi\templates\ENnashmi\Help.html:144
+#: .\ENnashmi\templates\ENnashmi\Help.html:163
+msgid "Tap the App Store or Google Play Store."
+msgstr "قم بزيارة متجر ابل او متجر جوجل"
+
+#: .\ENnashmi\templates\ENnashmi\Help.html:186
+msgid "Have more questions?"
+msgstr "هل لديك المزيد من الأسئلة؟"
+
+#: .\ENnashmi\templates\ENnashmi\Help.html:192
+msgid "Contact with us by"
+msgstr "تواصل معنا عن طريق"
+
+#: .\ENnashmi\templates\ENnashmi\Help.html:198
+msgid "Email"
+msgstr "الايميل"
+
+#: .\ENnashmi\templates\ENnashmi\Help.html:199
+msgid "Or"
+msgstr "او"
+
+#: .\ENnashmi\templates\ENnashmi\Help.html:200
+msgid "Phone number"
+msgstr "رقم الهاتف"
+
+#: .\ENnashmi\templates\ENnashmi\Help.html:203
+msgid "Close"
+msgstr "اغلاق"
+
+#: .\ENnashmi\templates\ENnashmi\index.html:110
+msgid "CUSTOMER"
+msgstr "زبائن"
+
+#: .\ENnashmi\templates\ENnashmi\index.html:116
+msgid "DRIVER"
+msgstr "سائق"
+
+#: .\ENnashmi\templates\ENnashmi\index.html:122
+msgid "PARTNER"
+msgstr "شركاء"
+
+#: .\ENnashmi\templates\ENnashmi\index.html:156
+msgid "HOW IT WORKS"
+msgstr "طريقة العمل"
+
+#: .\ENnashmi\templates\ENnashmi\index.html:157
+msgid "In easy 3 steps"
+msgstr "بثلاث خطوات رئيسية"
+
+#: .\ENnashmi\templates\ENnashmi\index.html:175
+msgid "GET THE APP NOW"
+msgstr "احصل على التطبيق الان"
+
+#: .\ENnashmi\templates\ENnashmi\index.html:201
+msgid "Customer"
+msgstr "زبون"
+
+#: .\ENnashmi\templates\ENnashmi\index.html:213
+msgid "Driver"
+msgstr "سائق"
+
+#: .\ENnashmi\templates\ENnashmi\index.html:224
+msgid "Store"
+msgstr "محل"
+
+#: .\ENnashmi\templates\ENnashmi\index.html:234
+msgid "Shop Now"
+msgstr "تسوق الان"
+
+#: .\ENnashmi\templates\ENnashmi\index.html:240
+msgid "Drive With Us"
+msgstr "انضم لنا"
+
+#: .\ENnashmi\templates\ENnashmi\index.html:246
+msgid "Become a Partner"
+msgstr "كن شريكا لنا"
+
+#: .\ENnashmi\views.py:11
+msgid "hello"
+msgstr "مرحبا"
+
+#~ msgid "SELECT STORE"
+#~ msgstr "اختر المحل"
+
+#~ msgid "SELECT PRODUCT"
+#~ msgstr "اختر المنتج"
+
+#~ msgid "RECEIVE AT YOUR DOORSTEP"
+#~ msgstr "استلم عند باب بيتك"
+
+#~ msgid "DISCOVER THE BEST DELIVERY SERVICE"
+#~ msgstr "اكتشف افضل خدمات التوصيل"
+
+#~ msgid "Join our network of partners and get more sales."
+#~ msgstr "انضم الى شبكة شركائنا واحصل على يعات اكثمبر"
+
+#~ msgid "REACH MORE CUSTOMERS"
+#~ msgstr "احصل على زبائن اكثر"

@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>Django File Upload</title>
+</head>
+<body>
+<p><h1>Django File Upload</h1></p>
+<form method="POST" class="post-form" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+</form>
+</body>
+</html>

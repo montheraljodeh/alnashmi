@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<form   id="systemForm">
+
+
+
+
+     {% csrf_token %}
+    {% for i in user2 %}
+     <input id="demo11" value={{ i.id }} />
+
+    {% endfor %}
+      <script>
+         var1=document.getElementById("demo11").value
+
+   <!--
+alert ("Alert Message"+var1)
+//-->
+</script>
+<h1>{{ user.username }}</h1>
+    <h1>{{ user.id }}</h1>
+
+<a href="{%url 'register12' user.id%}">Add student</a>
+<button id="demo" >addstudet</button>
+    </form>
+
+
+{% if user.is_authenticated %}
+<a href="{% url 'logout' %}">logout</a>
+{% endif %}
+<a href="{% url 'display' user.id%}">display</a>
+
+
+<a href="{% url 'displaystd' user.id%}">display std</a>
+<a href="{% url 'trans' user.id%}">transfer student</a>
+
+
+<a href="{% url 'atd' user.id%}">atd</a>
+
+
+
+</body>
+
+</html>

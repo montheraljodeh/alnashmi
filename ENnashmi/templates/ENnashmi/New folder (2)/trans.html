@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>montheraljodeh </title>
+</head>
+<body>
+<form action="/trans" method="post">
+    {% csrf_token %}
+    <label for="id1">طالب المحول</label>
+    <select  name="s1">
+ {% for ss in new %}
+        <option value=  {{ ss.user.username }}>
+           {{ ss.user.username }}
+
+        </option>
+{% endfor %}
+    </select>
+    <br/>
+    <label for="id2">اسم المعلم:</label>
+    <select name="t2">
+ {% for ss in new1 %}
+        <option value=  {{ ss.user.username }}>
+            {{ ss.user.username }}
+
+        </option>
+{% endfor %}
+    </select>
+    <br/>
+    <label   id="datetime" name="date1"></label>
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
+    <br/>
+<label>سبب التحويل</label>
+    <textarea name="reson">
+
+    </textarea>
+
+    <br/>
+    <input type="date" name="date1" >
+<button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
+
+<form action="/action_page.php">
+  <label for="cars">Choose a student:</label>
+  <select name="cars" id="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="opel">Opel</option>
+    <option value="audi">Audi</option>
+  </select>
+</form>
+                                    
+                                    <div class="col-md-12">
+       <br><br>                                 <form action="/action_page.php">
+  <label for="cars">Choose a teacher:</label>
+  <select name="cars" id="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="opel">Opel</option>
+    <option value="audi">Audi</option>
+  </select>
+</form>
+    </div>
+                                </div>
+
+                                <div class="form-group">
+<br><br>
+<label for="w3review">Reason of transfer</label><br><br>
+<textarea id="w3review" name="w3review" rows="4" cols="50">
+  
+  </textarea>
+                            <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <br><button class="btn btn-success">حفظ</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>atfd</title>
+</head>
+<body>
+<h1>student name</h1>
+{% for ss in std %}
+<h1>{{ ss.user.first_name }}</h1>
+<select  name="s1">
+
+        <option value="s">
+            حاضر
+        </option>
+     <option value="a">
+            غايب
+        </option>
+     <option value="م">
+           معذور
+        </option>
+</select>
+
+{% endfor %}
+
+
+</body>
+</html>

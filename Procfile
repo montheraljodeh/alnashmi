@@ -1,0 +1,1 @@
+web:gunicorn Alnashmi Project.wsgi --log-file

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display std</title>
+</head>
+<body>
+<form action="displaystd">
+{% for ss in new %}
+<h1>{{ ss.id }}</h1>
+<h1>{{ ss.stuts }}</h1>
+    <h1>{{ ss.user }} </h1>
+    <a href="{% url 'delete' ss.id%}">delete</a>
+    <a href="{% url 'update1' ss.id%}">edit</a>
+
+{% endfor %}
+    </form>
+</body>
+</html>

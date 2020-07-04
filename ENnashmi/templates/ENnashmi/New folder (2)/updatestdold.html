@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>update</title>
+</head>
+<body>
+
+<form action="{% url 'update' new.id%}" method="post">
+     {% csrf_token %}
+  <h1>phonenumber:</h1>  <input type="number" name="phonenumber" value="{{ new.phonenumber }}"/>
+    <h1>username:</h1>  <input type="text" name="username" value="{{ new.user.username }}"/>
+    <h1>first_name:</h1>  <input type="text" name="first_name" value="{{ new.user.first_name }}"/>
+     <h1>last_name:</h1>  <input type="text" name="last_name" value="{{ new.user.last_name }}"/>
+    <h1>email:</h1>  <input type="email" name="email" value="{{ new.user.email }}"/>
+
+    <button type="submit">update data </button>
+</form>
+</body>
+</html>

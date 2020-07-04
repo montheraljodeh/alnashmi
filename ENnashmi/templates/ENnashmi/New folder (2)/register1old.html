@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reg</title>
+</head>
+<body>
+
+<form method="post" action="/register1">
+    {% csrf_token %}
+    <input  type="number"  name="id" placeholder="id" hidden>
+
+    <input  type="text"  name="first_name" placeholder="first_name" required>
+    <input  type="text"  name="last_name" placeholder="last_name" required>
+    <input  type="text"  name="username" placeholder="username" required>
+    <input   type="email"   name="email" placeholder="email" required>
+    <input   type="password" name="password1" placeholder="password1" required>
+    <input   type="password" name="password2" placeholder="password2" required>
+    <input   type="text" name="stuts" placeholder="stuts" value="std" readonly>
+    <input type="number" name="phonenumber" placeholder="phonenumber" required>
+    <input type="number" name="idtech" value="{{ new.id }}">
+
+    <button type="submit" >reg</button>
+
+
+
+</form>
+
+
+<a href="{% url 'logout' %}">logout</a>
+<h1>dfdgh</h1>
+
+
+</body>
+</html>

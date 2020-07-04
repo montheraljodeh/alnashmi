@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rateandexam</title>
+</head>
+<body>
+<h1>blank page</h1>
+<table border="10px" >
+    <tr>
+    <th>اسم الطالب</th>
+    <th hidden>اسم المعلم </th>
+
+    <th>اسم سورة</th>
+    <th>عدد صفحات التي تم حفظها اليوم</th>
+        <th>السلوك</th>
+        <th>عدد نقاط</th>
+
+  </tr>
+    {% for i in student %}
+    <td id="myList[]">
+        <form method="post" action="{% url 'rateandexam' %}" >
+            {% csrf_token %}
+             {{ i.user.username }}
+    <input  name="myList[]"  value={{ i.user.id }} hidden>
+
+    <td>
+          <input   name="myList1[]" value={{ i.techer.user.id }}  hidden/>
+        <select name="myList2[]">
+
+            <option value="النازعات">النازعات</option>
+            <option value="الانشقاق">الانشقاق </option>
+             <option value="المطففين">المطففين </option>
+        </select>
+    </td>
+    <td>
+        <input name="myList3[]"  type="number" />
+    </td>
+    <td>
+         <input name="myList4[]"  type="number"/>
+    </td>
+    <td>
+         <input name="myList5[]"  type="number"/>
+    </td>
+
+  </tr>
+
+
+    </td>
+    {% endfor %}
+
+<td><input type="submit"  value="save"/></td>
+      </form>
+
+</table>
+
+
+<script>
+
+var date = new Date();
+
+var day = date.getDate();
+var month = date.getMonth() + 1;
+var year = date.getFullYear();
+
+if (month < 10) month = "0" + month;
+if (day < 10) day = "0" + day;
+
+var today = year + "-" + month + "-" + day;
+document.getElementById("theDate").value = today;
+</script>
+</body>
+</html>

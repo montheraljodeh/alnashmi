@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="{%static 'plugins/images/favicon.png'%}">
+    <title>صفحة المعلم</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="{%static 'plugins/bootstrap/dist/css/bootstrap.min.css'%}" rel="stylesheet">
+    <link href="{%static 'style.css' %}" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="{%static 'plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css'%}" rel="stylesheet">
+    <!-- toast CSS -->
+    <link href="{%static 'plugins/bower_components/toast-master/css/jquery.toast.css'%}" rel="stylesheet">
+    <!-- morris CSS -->
+    <link href="{%static 'plugins/bower_components/morrisjs/morris.css'%}" rel="stylesheet">
+    <!-- chartist CSS -->
+    <link href="{%static 'plugins/bower_components/chartist-js/dist/chartist.min.css'%}" rel="stylesheet">
+    <link href="{%static 'plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css'%}" rel="stylesheet">
+    <!-- animation CSS -->
+    <link href="{%static 'plugins/css/animate.css'%}" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="{%static 'plugins/css/style.css'%}" rel="stylesheet">
+    <!-- color CSS -->
+    <link href="{%static 'plugins/css/colors/default.css'%}" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header">
+    <!-- ============================================================== -->
+    <!-- Preloader -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+        </svg>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Wrapper -->
+    <!-- ============================================================== -->
+    <div id="wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <nav class="navbar navbar-default navbar-static-top m-b-0">
+            <div class="navbar-header">
+                <div class="top-left-part">
+                    <!-- Logo -->
+                    <a class="logo" href="dashboard.html">
+                        <!-- Logo icon image, you can use font-icon also -->
+                        <b>
+                            <!--This is dark logo icon-->
+                            <img src="{%static 'plugins/images/admin-logo.png'%}" alt="home" class="dark-logo" />
+                            <!--This is light logo icon-->
+                            <img src="{%static 'plugins/images/admin-logo-dark.png'%}" alt="home" class="light-logo" />
+                        </b>
+                        <!-- Logo text image you can use text also -->
+                        <span class="hidden-xs">
+                            <!--This is dark logo text-->
+                            <img src="{%static 'plugins/images/admin-text.png'%}" alt="home" class="dark-logo" />
+                            <!--This is light logo text-->
+                            <img src="{%static 'plugins/images/admin-text-dark.png'%}" alt="home" class="light-logo" />
+                        </span> 
+                    </a>
+                </div>
+                <!-- /Logo -->
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <li>
+                        <a class="nav-toggler open-close waves-effect waves-light hidden-md hidden-lg" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+                    </li>
+                    <li>
+                        <form role="search" class="app-search hidden-sm hidden-xs m-r-10">
+                            <input type="text" placeholder="...البحث عن طالب " class="form-control"> 
+                            <a href="">
+                                <i class="fa fa-search"></i>
+                            </a> 
+                        </form>
+                    </li>
+                    <li>
+                        <a class="profile-pic" href="#"> <i class="fa fa-user" aria-hidden="true"></i> User Name</b></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-header -->
+            <!-- /.navbar-top-links -->
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- End Top Navigation -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav slimscrollsidebar">
+               
+                <ul class="nav" id="side-menu">
+                    <li style="padding: 70px 0 0;">
+                        <a href="dashboard.html" class="waves-effect"><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i>الصفحة الرئيسية</a>
+                    </li>
+                      <li>
+                        <a href="profile.html" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i>اضافة طالب</a>
+                    </li>
+                       <li>
+                        <a href="profile.html" class="waves-effect"><i class="fa fa-reply" aria-hidden="true"></i>تحويل طالب الى معلم اخر</a>
+                    </li>
+                      <li>
+                        <a href="profile.html" class="waves-effect"><i class="fa fa-table fa-fw"
+                                aria-hidden="true"></i>عرض الطلاب</a>
+                    </li>
+                       <li>
+                        <a href="profile.html" class="waves-effect"><i class="fa fa-calendar" aria-hidden="true"></i>
+التقييمات والاختبارات</a>
+                    </li>
+                       <li>
+                        <a href="profile.html" class="waves-effect"><i class="fa fa-calendar-times-o" aria-hidden="true"></i>
+الغياب</a>
+                    </li>
+                      <li>
+                        <a href="profile.html" class="waves-effect"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+تعديل البيانات الشخصية</a>
+                    </li>
+
+            </div>
+            
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page Content -->
+        <!-- ============================================================== -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h2 class="page-title">الحضور و الغياب</h2>
+                    </div>
+  <style>
+
+.t  { background-color: #0CD61A }
+.t2 { background-color: #f00 }
+.s{}
+.a{}
+table td {
+    margin: 12px 12px 12px 12px;
+    padding: 12px 12px 12px 12px;
+     border-radius: 8px;
+     color:#000000;
+      display: flex;
+    flex-wrap: wrap;
+}
+table ,th,td {
+    border-collapse: separate;
+    border-spacing: 10px;
+    *border-collapse: expression('separate', cellSpacing = '10px');
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-item {
+    width: calc(100% / 3);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 0, 0.8);
+  border: 10px solid rgba(0, 0, 0, 0.8);
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+</style>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /row -->
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="white-box">
+                            
+                            <div class="table-responsive">
+
+                               <table style="width:100%" >
+                                   {% for i in new %}
+
+                                   <div>
+<tr  class='t' onclick='cSwap(this,this)' name='ss[]' >
+                                       <td    >
+                                            <form method="post" action="{% url 'attendece' new1%}" >
+                                                {% csrf_token %}
+                                           <a style="color:white">{{ i.user.first_name }}</a> <input value=1 type="number" name="ss[]" /> </td>
+</tr>
+
+                                   </div>
+
+
+        {% endfor %}
+
+
+<br><button  type="submit" >حفظ</button>
+                                   </form>
+
+<script>
+
+
+    var count1=parseInt(document.getElementById("number1").value);
+    count1+=1;
+    document.getElementById("number").value=count1;
+
+</script>
+
+
+</table>
+
+<h1 id="demo"></h1>
+<script>
+function cSwap(cell,x){
+var person = {};
+    if (cell.className == "t")
+    {
+        cell.className = "t2";
+        alert("Row index is: " + x.rowIndex);
+        person[x.rowIndex]=0;
+        document.getElementById("demo").innerHTML = person[x.rowIndex];
+
+
+
+
+
+        }
+    else if (cell.className == "t2")
+    {
+        cell.className = "t";
+        alert("Row index is: " + x.rowIndex);
+        person[x.rowIndex]=1;
+
+        }
+}
+</script>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+            <footer class="footer text-center"> 2020 &copy; Monther AL-Jodeh</footer>
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+ <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="{%static 'plugins/bower_components/jquery/dist/jquery.min.js'%}"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{%static 'plugins/bootstrap/dist/js/bootstrap.min.js'%}"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="{%static 'plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js'%}"></script>
+    <!--slimscroll JavaScript -->
+    <script src="{%static 'plugins/js/jquery.slimscroll.js'%}"></script>
+    <!--Wave Effects -->
+    <script src="{%static 'plugins/js/waves.js'%}"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="{%static 'plugins/js/custom.min.js'%}"></script>
+</body>
+</body>
+
+</html>
